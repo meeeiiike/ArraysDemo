@@ -3,6 +3,14 @@ package ie.atu.week5;
 import java.util.Scanner;
 
 public class ArrayDemo {
+
+    // Print Array Method
+    public static void printArray(int[] myArray){
+        for (Integer i : myArray) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] myArray = new int[10];
@@ -29,15 +37,9 @@ public class ArrayDemo {
             System.out.println(" Invalid! Error Message: " + e.getMessage());
         }
 
-        // Print out all elements of myArray
-        for (Integer i : myArray) {
-            System.out.println(i);
-        }
-
-        // Rewrite your application to use an enhanced for loop if you have not done so already. Move this
-        // loop to a method so we can reuse the code, if needed. Create this new feature on a branch. If it
-        // works after your code change, then push to Master using a pull request
+        printArray(myArray);
 
         // ONCE ALL DONE MOVE ONTO ARRAY LISTS
+
     }
 }
