@@ -6,8 +6,11 @@ public class ArrayDemo {
 
     // Print Array Method
     public static void printArray(int[] myArray){
+        int x = 0;
         for (Integer i : myArray) {
+            System.out.print("Element at index " + x + ": ");
             System.out.println(i);
+            x++;
         }
     }
 
